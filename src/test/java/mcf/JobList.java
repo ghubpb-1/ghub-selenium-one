@@ -7,6 +7,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class JobList {
     public static void main(String[] args) {
+        long startTime = System.currentTimeMillis();
+
         //Navigate to https://www.mycareersfuture.gov.sg/search?search=Test&sortBy=new_posting_date&page=0
         System.out.println("JobList.java is running in the mcf package");
         WebDriver driver = new FirefoxDriver();
@@ -29,6 +31,11 @@ public class JobList {
 
         
         driver.quit();
+
+
+// ... your code ...
+        long endTime = System.currentTimeMillis();
+        System.out.println("Execution time: " + (endTime - startTime) + " ms");
 
     }
 }
